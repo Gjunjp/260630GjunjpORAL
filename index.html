@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>巨匠東大日語口試評分參考 (100分制)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #fcf9f9;
+        }
+        .tab-content {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .tab-content.active {
+            display: block;
+            opacity: 1;
+        }
+        .case-card {
+            transition: transform 0.2s;
+        }
+        .case-card:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sakura: { 50: '#fdf2f8', 100: '#fce7f3', 200: '#fbcfe8', 500: '#ec4899', 600: '#db2777' },
+                        lilac: { 50: '#faf5ff', 100: '#f3e8ff', 200: '#e9d5ff', 500: '#a855f7', 600: '#9333ea' },
+                        sky: { 50: '#f0f9ff', 100: '#e0f2fe', 200: '#bae6fd', 500: '#0ea5e9', 600: '#0284c7' },
+                        pass: { 50: '#ecfdf5', 600: '#059669' },
+                        fail: { 50: '#fef2f2', 600: '#dc2626' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-gray-800 antialiased min-h-screen pb-12">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <span class="text-3xl">🌸</span>
+                    <h1 class="text-2xl font-bold text-gray-700">巨匠東大日語口試評分參考 <span class="text-sm bg-gray-100 text-gray-600 px-2 py-1 rounded">100分制 / 80分及格</span></h1>
+                </div>
+            </div>
+            <nav class="flex space-x-8 mt-2 overflow-x-auto border-b border-gray-200" aria-label="Tabs">
+                <button onclick="switchTab('n5-n4')" id="tab-n5-n4" class="tab-btn whitespace-nowrap py-4 px-1 border-b-4 font-bold text-lg border-sakura-500 text-sakura-600 focus:outline-none transition-colors">N5 升 N4</button>
+                <button onclick="switchTab('n4-n3')" id="tab-n4-n3" class="tab-btn whitespace-nowrap py-4 px-1 border-b-4 border-transparent font-medium text-lg text-gray-500 hover:text-gray-700 focus:outline-none transition-colors">N4 升 N3</button>
+                <button onclick="switchTab('n3-n2')" id="tab-n3-n2" class="tab-btn whitespace-nowrap py-4 px-1 border-b-4 border-transparent font-medium text-lg text-gray-500 hover:text-gray-700 focus:outline-none transition-colors">N3 升 N2</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <!-- ================= N5 升 N4 ================= -->
+        <div id="n5-n4" class="tab-content active">
+            
+            <!-- 口試題庫 N5-N4 -->
+            <div class="bg-white p-5 rounded-lg border border-sakura-200 shadow-sm mb-8">
+                <h3 class="text-lg font-bold text-sakura-600 mb-3 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    口試題目參考 (請從以下トピック挑選 1-2 題，話題延續 5-10 分鐘)
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 text-gray-700 text-sm pl-2">
+                    <p>1. 自己紹介</p>
+                    <p>2. どうして日本語を勉強したい？</p>
+                    <p>3. 今日の天気と好きな天気とその理由</p>
+                    <p>4. 休みの日は何をしています（ＶたりＶたり）</p>
+                    <p>5. 上下左右前後左右轉彎的日語怎麼說</p>
+                    <p>6. ないでください造句</p>
+                    <p>7. ＿＿＿に行ったことがあります。 / ＿＿＿を食べたことがあります。</p>
+                </div>
+            </div>
+
+            <!-- 評分量表 N5-N4 -->
+            <div class="mb-12">
+                <div class="flex items-center mb-4">
+                    <h2 class="text-2xl font-bold text-gray-800 border-l-4 border-sakura-500 pl-3">N5 升 N4 評分量表</h2>
+                    <span class="ml-4 text-sm text-gray-500 bg-white px-3 py-1 rounded-full shadow-sm">重點：基礎變化、助詞、聽力反應</span>
+                </div>
+                <div class="overflow-x-auto shadow-sm border border-sakura-100 sm:rounded-lg">
+                    <table class="w-full text-sm text-left text-gray-700 bg-white">
+                        <thead class="text-xs uppercase bg-sakura-50">
+                            <tr>
+                                <th class="px-4 py-4 w-1/6">評估維度</th>
+                                <th class="px-4 py-4 w-1/5 border-l border-white bg-pass-50 text-pass-600">90-100分 (極佳)<br><span class="text-xs font-normal">游刃有餘</span></th>
+                                <th class="px-4 py-4 w-1/5 border-l border-white bg-green-50 text-green-700">80-89分 (及格達標)<br><span class="text-xs font-normal">85↑穩健 / 80-84邊緣</span></th>
+                                <th class="px-4 py-4 w-1/5 border-l border-white bg-amber-50 text-amber-700">70-79分 (未達標)<br><span class="text-xs font-normal">75↑惜敗 / 70-74缺漏多</span></th>
+                                <th class="px-4 py-4 w-1/5 border-l border-white bg-fail-50 text-fail-600">40-69分 (需重修)<br><span class="text-xs font-normal">基礎薄弱</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b hover:bg-gray-50">
+                                <th class="font-bold bg-sakura-50/30 px-4 py-4">文法與動詞變化</th>
+                                <td class="px-4 py-3">能流暢且精準切換て/た/ない/辭書形，助詞無誤。</td>
+                                <td class="px-4 py-3">
+                                    <div class="mb-1"><span class="font-bold text-green-600">85-89:</span> 變化正確，偶有語病。</div>
+                                    <div><span class="font-bold text-green-600">80-84:</span> 需自我修正才能念對變化。</div>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="mb-1"><span class="font-bold text-amber-600">75-79:</span> 特殊變化常卡關，助詞偶誤。</div>
+                                    <div><span class="font-bold text-amber-600">70-74:</span> 依賴「ます/です」，不熟て形。</div>
+                                </td>
+                                <td class="px-4 py-3">無法正確變化動詞，助詞嚴重漏缺或張冠李戴(如把が念成を)。</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <th class="font-bold bg-sakura-50/30 px-4 py-4">語彙與句型</th>
+                                <td class="px-4 py-3">主動使用N5句型(〜たり、〜たい)，詞彙豐富不重複。</td>
+                                <td class="px-4 py-3">
+                                    <div class="mb-1"><span class="font-bold text-green-600">85-89:</span> 詞彙足夠，能換句話說。</div>
+                                    <div><span class="font-bold text-green-600">80-84:</span> 詞彙稍少，需考官些微提示。</div>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="mb-1"><span class="font-bold text-amber-600">75-79:</span> 常重複相同單字，句型單一。</div>
+                                    <div><span class="font-bold text-amber-600">70-74:</span> 單字量不足以應付情境對話。</div>
+                                </td>
+                                <td class="px-4 py-3">大量夾雜中文，或無法回想最基本的 N5 民生單字。</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <th class="font-bold bg-sakura-50/30 px-4 py-4">流暢度與聽力</th>
+                                <td class="px-4 py-3">考官提問後 1-2 秒內接話，語調自然如母語。</td>
+                                <td class="px-4 py-3">
+                                    <div class="mb-1"><span class="font-bold text-green-600">85-89:</span> 思考約3秒，會用あの等緩衝。</div>
+                                    <div><span class="font-bold text-green-600">80-84:</span> 稍微卡頓，但能聽懂不需重述。</div>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="mb-1"><span class="font-bold text-amber-600">75-79:</span> 停頓超過5秒，需放慢語速。</div>
+                                    <div><span class="font-bold text-amber-600">70-74:</span> 需考官換簡單說法才聽得懂。</div>
+                                </td>
+                                <td class="px-4 py-3">完全聽不懂提問，需考官翻譯成中文，或持續靜默。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- 評語庫 -->
+                <div class="lg:col-span-1">
+                    <h3 class="text-xl font-bold mb-4 text-gray-700 flex items-center"><svg class="w-5 h-5 mr-2 text-sakura-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/></svg>考官評語庫</h3>
+                    <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm space-y-4 text-sm">
+                        <div class="p-3 bg-green-50 border-l-4 border-green-500 rounded">
+                            <strong class="text-green-700 block mb-1">【85分以上】表現優異</strong>
+                            「て形與過去式的切換非常流暢，助詞觀念清晰。對答如流，具備非常好的 N4 學習基礎，請繼續保持！」
+                        </div>
+                        <div class="p-3 bg-lime-50 border-l-4 border-lime-500 rounded">
+                            <strong class="text-lime-700 block mb-1">【80-84分】邊緣達標</strong>
+                            「恭喜及格！基本溝通沒問題，但在『否定形(ない形)』反應較慢。進入 N4 前建議多做字卡快問快答，開學後會學得更輕鬆喔。」
+                        </div>
+                        <div class="p-3 bg-amber-50 border-l-4 border-amber-500 rounded">
+                            <strong class="text-amber-700 block mb-1">【75-79分】文法卡關惜敗</strong>
+                            「單字量充足，但在把『ます形』轉為『て形』等動詞變化時卡住。建議授課老師針對『動詞變化』做專項強化後再測。」
+                        </div>
+                        <div class="p-3 bg-orange-50 border-l-4 border-orange-500 rounded">
+                            <strong class="text-orange-700 block mb-1">【70-74分】聽力反應慢</strong>
+                            「單字背得不錯，但不習慣全日文語速。聽到問句停頓過長，建議從『聽寫 N5 課文音檔』開始練習，習慣後再挑戰。」
+                        </div>
+                        <div class="p-3 bg-red-50 border-l-4 border-red-500 rounded">
+                            <strong class="text-red-700 block mb-1">【69分以下】助詞/句型破碎</strong>
+                            「傾向用『單字拼湊』表達，缺乏助詞連接。N4有長句，必須先將N5基礎助詞與句型補齊才能跟上。」
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 學生案例 -->
+                <div class="lg:col-span-2">
+                    <h3 class="text-xl font-bold mb-4 text-gray-700 flex items-center"><svg class="w-5 h-5 mr-2 text-sakura-500" fill="currentColor" viewBox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/></svg>實際題目分級案例 (9種層次)</h3>
+                    <div class="space-y-3 max-h-[600px] overflow-y-auto pr-2 pb-4">
+                        <!-- 優秀案例 -->
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-green-500">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-green-700">🟢 優秀1：文法精準型 (Q4 休みの日は)</span>
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-bold">95 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">針對「休みの日は何をしていますか」能精準且流暢地回答：「休みの日は、映画を<b>見たり</b>、本を<b>読んだり</b>します。」完美達成題目的文法要求。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-lime-500">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-lime-700">🟢 優秀2：自我修正型 (Q2 どうして)</span>
+                                <span class="bg-lime-100 text-lime-800 text-xs px-2 py-1 rounded-full font-bold">86 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">針對「どうして日本語を勉強したい？」回答：「アニメが好き<b>ですから</b>…あっ、アニメが好き<b>なので</b>。」講錯時能自己發現並立刻修正，對話流暢無礙。</p>
+                        </div>
+                        <!-- 待加強案例 -->
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-amber-400">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-amber-600">🟡 待加強1：變形超時惜敗 (Q6 ないでください)</span>
+                                <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full font-bold">78 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">考官給出單字「写真を撮ります」，要求做「ないでください造句」。學生聽得懂，但在腦袋運算「撮らない」的變化時卡了 5-8 秒才講出來，反應速度未達標。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-orange-400">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-orange-600">🟠 待加強2：逃避文法型 (Q4 休みの日は)</span>
+                                <span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full font-bold">75 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">針對「休みの日は何をしていますか」，完全迴避了「たり」的用法，只用最基礎的ます形羅列：「映画を見ます。本を読みます。」缺乏 N5 畢業應有的句型整合能力。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-orange-500">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-orange-600">🟠 待加強3：背稿當機型 (Q1 & Q2)</span>
+                                <span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full font-bold">72 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Q1的【自己紹介】背得極度流利。但考官接著追問Q2【どうして日本語を？】時，瞬間當機僵住，顯示毫無臨場聽力與對答能力，全靠死背。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-red-400">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-red-600">🔴 待加強4：中日夾雜型 (Q3 天氣)</span>
+                                <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full font-bold">65 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">問及【今日の天気と好きな天気】，回答：「今日はとても熱い、<b>我喜歡晴天</b>。」遇到不會的單字(晴れ)直接脫口而出中文，無意願用其他日文詞彙換句話說。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-red-500">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-red-700">🔴 待加強5：助詞全錯型 (Q5 方向)</span>
+                                <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full font-bold">60 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">在測驗【上下左右轉彎】時，單字雖然會講，但助詞完全混淆。例如把「右<b>に</b>曲がります」講成「右<b>を</b>曲がります」，方向指引語無倫次。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-rose-600">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-rose-700">🔴 待加強6：聽力理解錯誤 (Q7 經驗)</span>
+                                <span class="bg-rose-100 text-rose-800 text-xs px-2 py-1 rounded-full font-bold">55 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">考官問【日本に行ったことがありますか？】(有去過嗎)，學生把「行った」聽成「行きたい」，回答：「はい、行きたいです」，完全答非所問。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-rose-800">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-rose-900">⚫ 待加強7：基礎完全崩壞</span>
+                                <span class="bg-rose-200 text-rose-900 text-xs px-2 py-1 rounded-full font-bold">45 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">連最基本的【自己紹介】都講得結結巴巴，只會講名字單字，沒有辦法組織成最簡單的「～です」句型，強烈建議重修 N5。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= N4 升 N3 ================= -->
+        <div id="n4-n3" class="tab-content">
+            
+            <!-- 口試題庫 N4-N3 -->
+            <div class="bg-white p-5 rounded-lg border border-lilac-200 shadow-sm mb-8">
+                <h3 class="text-lg font-bold text-lilac-600 mb-3 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    口試題目參考 (請挑選題目進行 5-10 分鐘對話)
+                </h3>
+                <div class="grid grid-cols-1 gap-y-3 text-gray-700 text-sm pl-2">
+                    <p><strong class="text-lilac-500">【住まいと生活】</strong> 1. 家を探すとき、「職場や学校から遠くても広い家」と「狭くても便利な家」のどちらを選びますか。一番ゆずれない条件を教えてください。</p>
+                    <p><strong class="text-lilac-500">【食文化と料理】</strong> 2. 食べると一番ほっとする料理は何ですか。<br>3. 自分で料理をする時、よく作るメニューは何ですか。簡単な作り方も教えてください。</p>
+                    <p><strong class="text-lilac-500">【学習と目標】</strong> 4. 外国語が上手になるために、毎日続けている習慣や工夫していることはありますか。<br>5. 今の学習が終わった後、将来どのような環境で働きたいと考えていますか。</p>
+                    <p><strong class="text-lilac-500">【人との関係】</strong> 6. 友達と約束していたのに急に行けなくなった経験はありますか。どう伝えましたか。<br>7. 友達に対して「もう少しマナーを守ってほしい」と感じた行動はありますか。<br>8. 友人の結婚など、おめでたいことがあった時、どのような形でお祝いをしてあげたいですか。</p>
+                    <p><strong class="text-lilac-500">【自由時間と娯楽】</strong> 9. 音楽ライブやスポーツの試合を見て、そのすばらしさに感動した経験はありますか。</p>
+                    <p><strong class="text-lilac-500">【旅行とサービス】</strong> 10. ホテルやレストランで、特別なリクエストをした経験、またはサービスで残念な思いをした経験はありますか。</p>
+                </div>
+            </div>
+
+            <!-- 評分量表 N4-N3 -->
+            <div class="mb-12">
+                <div class="flex items-center mb-4">
+                    <h2 class="text-2xl font-bold text-gray-800 border-l-4 border-lilac-500 pl-3">N4 升 N3 評分量表</h2>
+                    <span class="ml-4 text-sm text-gray-500 bg-white px-3 py-1 rounded-full shadow-sm">重點：授受動詞、使役/被動、條件句、常體切換</span>
+                </div>
+                <div class="overflow-x-auto shadow-sm border border-lilac-100 sm:rounded-lg">
+                    <table class="w-full text-sm text-left text-gray-700 bg-white">
+                        <thead class="text-xs uppercase bg-lilac-50">
+                            <tr>
+                                <th class="px-4 py-4 w-1/6">評估維度</th>
+                                <th class="px-4 py-4 w-1/5 border-l border-white bg-pass-50 text-pass-600">90-100分 (極佳)</th>
+                                <th class="px-4 py-4 w-1/5 border-l border-white bg-green-50 text-green-700">80-89分 (及格達標)</th>
+                                <th class="px-4 py-4 w-1/5 border-l border-white bg-amber-50 text-amber-700">70-79分 (未達標)</th>
+                                <th class="px-4 py-4 w-1/5 border-l border-white bg-fail-50 text-fail-600">40-69分 (需重修)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b hover:bg-gray-50">
+                                <th class="font-bold bg-lilac-50/30 px-4 py-4">進階文法掌握<br>(被動/使役/授受)</th>
+                                <td class="px-4 py-3">精準使用「～てあげる/もらう/くれる」，被動態變化瞬間完成無誤。</td>
+                                <td class="px-4 py-3">
+                                    <div class="mb-1"><span class="font-bold text-green-600">85-89:</span> 授受關係正確，使役/被動稍慢。</div>
+                                    <div><span class="font-bold text-green-600">80-84:</span> 複雜句型偶有助詞(に/が)錯亂。</div>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="mb-1"><span class="font-bold text-amber-600">75-79:</span> 迴避使用 N4 複雜句型。</div>
+                                    <div><span class="font-bold text-amber-600">70-74:</span> 條件句(と/ば/たら/なら)完全混淆。</div>
+                                </td>
+                                <td class="px-4 py-3">授受關係顛倒，使役/被動態完全不會變，退化至 N5 水準。</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <th class="font-bold bg-lilac-50/30 px-4 py-4">敬體與常體切換</th>
+                                <td class="px-4 py-3">能根據對話對象(如：描述跟朋友講話的情境)完美切換普通體。</td>
+                                <td class="px-4 py-3">
+                                    <div class="mb-1"><span class="font-bold text-green-600">85-89:</span> 切換大致正確，偶有不自覺混用。</div>
+                                    <div><span class="font-bold text-green-600">80-84:</span> 常體變形時需稍微思考。</div>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="mb-1"><span class="font-bold text-amber-600">75-79:</span> 朋友情境仍大量使用「ます/です」。</div>
+                                    <div><span class="font-bold text-amber-600">70-74:</span> 常體的過去式(た)或否定(ない)出錯。</div>
+                                </td>
+                                <td class="px-4 py-3">沒有常體概念，或在需要禮貌的場合完全使用常體且不知修正。</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <th class="font-bold bg-lilac-50/30 px-4 py-4">長句接續與語調</th>
+                                <td class="px-4 py-3">能使用接續詞(それで、だから)串聯三個以上的短句，語調有抑揚頓挫。</td>
+                                <td class="px-4 py-3">
+                                    <div class="mb-1"><span class="font-bold text-green-600">85-89:</span> 能說出完整長句，稍微欠缺抑揚。</div>
+                                    <div><span class="font-bold text-green-600">80-84:</span> 依賴「～て、～て」接續，較為平鋪。</div>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="mb-1"><span class="font-bold text-amber-600">75-79:</span> 無法說長句，只用單字或極短句應答。</div>
+                                    <div><span class="font-bold text-amber-600">70-74:</span> 停頓點錯誤，斷句切在不自然的地方。</div>
+                                </td>
+                                <td class="px-4 py-3">只能像機器人般唸出短句，且經常聽不懂考官的 N4 長度提問。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-1">
+                    <h3 class="text-xl font-bold mb-4 text-gray-700 flex items-center"><svg class="w-5 h-5 mr-2 text-lilac-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/></svg>考官評語庫</h3>
+                    <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm space-y-4 text-sm">
+                        <div class="p-3 bg-green-50 border-l-4 border-green-500 rounded">
+                            <strong class="text-green-700 block mb-1">【85分以上】表現優異</strong>
+                            「常體與敬體切換自如，能漂亮地使用『被動態/使役態』來描述經驗。具備扎實的 N3 銜接基礎，表現很棒！」
+                        </div>
+                        <div class="p-3 bg-lime-50 border-l-4 border-lime-500 rounded">
+                            <strong class="text-lime-700 block mb-1">【80-84分】邊緣達標</strong>
+                            「順利通過！能完整表達意思，但在『條件句(と/ば/たら/なら)』的使用上稍微猶豫。升上 N3 後句型會更複雜，建議多複習這部分。」
+                        </div>
+                        <div class="p-3 bg-amber-50 border-l-4 border-amber-500 rounded">
+                            <strong class="text-amber-700 block mb-1">【75-79分】文法混淆惜敗</strong>
+                            「口語算流暢，但 N4 核心的『授受動詞(あげる/もらう)』主受詞關係完全相反。這在 N3 會造成嚴重理解障礙，需專項強化後補考。」
+                        </div>
+                        <div class="p-3 bg-orange-50 border-l-4 border-orange-500 rounded">
+                            <strong class="text-orange-700 block mb-1">【70-74分】退化/依賴N5</strong>
+                            「回答提問時，會下意識逃避 N4 的長句與接續，全用 N5 基礎短句拼湊。缺乏描述複雜事物的能力，需重新釐清文法架構。」
+                        </div>
+                        <div class="p-3 bg-red-50 border-l-4 border-red-500 rounded">
+                            <strong class="text-red-700 block mb-1">【69分以下】基礎薄弱</strong>
+                            「連基本的常體變化都無法正確說出，聽不懂考官較長的 N4 程度提問。建議不要硬升，重修 N4 後半段對學生較好。」
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <h3 class="text-xl font-bold mb-4 text-gray-700 flex items-center"><svg class="w-5 h-5 mr-2 text-lilac-500" fill="currentColor" viewBox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/></svg>實際題目分級案例 (9種層次)</h3>
+                    <div class="space-y-3 max-h-[600px] overflow-y-auto pr-2 pb-4">
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-green-500">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-green-700">🟢 優秀1：母語者語感型 (Q10 残念な経験)</span>
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-bold">96 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">針對【残念な経験】能流暢使用帶有遺憾語氣的被動句：「レストランで、冷たい料理を<b>出されてしまって</b>…」。語境與文法完美契合。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-lime-500">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-lime-700">🟢 優秀2：穩健表達型 (Q6 約束に行けない)</span>
+                                <span class="bg-lime-100 text-lime-800 text-xs px-2 py-1 rounded-full font-bold">84 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">針對【急に行けなくなった】，雖然思考了2秒，但清楚講出：「急に用事が入ってしまって、行けなくなりました。ごめんね。」得體地完成了情境說明。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-amber-400">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-amber-600">🟡 待加強1：授受錯亂惜敗 (Q8 お祝い)</span>
+                                <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full font-bold">78 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">問及【どのようにお祝いをしてあげたい？】，學生回答：「友達にプレゼントを<b>もらってあげたい</b>です。」あげる與もらう完全用反，這在 N3 會造成嚴重理解障礙。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-orange-400">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-orange-600">🟠 待加強2：條件句大鍋炒 (Q1 家を探すとき)</span>
+                                <span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full font-bold">75 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">在說明找房條件時，「と、ば、たら、なら」完全分不清楚。想講「如果很窄就不方便」，講成了過去式的「狭いと不便でした」，邏輯漏洞多。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-orange-500">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-orange-600">🟠 待加強3：流水帳接續 (Q3 料理の作り方)</span>
+                                <span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full font-bold">72 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">在描述【得意な料理の手順】時，不會使用「～てから」或「まず、次に」，全程只用「切ります。炒めます。」這種 N5 短句拼湊，缺乏組織長句的能力。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-red-400">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-red-600">🔴 待加強4：常體絕緣體 (Q7 マナー)</span>
+                                <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full font-bold">66 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">在設定為「向朋友抱怨行為」的情境中，全程使用「～です/～ます」。顯示對於日文中依據對象切換「常體/敬體」的語感毫無概念。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-red-500">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-red-700">🔴 待加強5：聽力當機 (Q4 習慣や工夫)</span>
+                                <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full font-bold">60 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">考官的提問偏長：「外国語が上手になるために…」，學生聽到後面就迷失了，失去理解能力，只能靜默或傻笑，無法捕捉題目核心。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-rose-600">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-rose-700">🔴 待加強6：語調機器人 (Q2 ほっとする料理)</span>
+                                <span class="bg-rose-100 text-rose-800 text-xs px-2 py-1 rounded-full font-bold">50 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">回答時極度像在念死背的稿子，毫無抑揚頓挫。當考官突然追問「どうしてですか？」時，由於沒背到，完全無法臨場組織句子回答。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-rose-800">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-rose-900">⚫ 待加強7：時空旅人/退化N5 (Q5 将来)</span>
+                                <span class="bg-rose-200 text-rose-900 text-xs px-2 py-1 rounded-full font-bold">42 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">問及【将来どのような環境で働きたいですか】，不僅不會用 N4 句型，連回答都退化成 N5 第一課：「会社員です。日本が好きです。」完全無法溝通。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= N3 升 N2 ================= -->
+        <div id="n3-n2" class="tab-content">
+            
+            <!-- 口試題庫 N3-N2 -->
+            <div class="bg-white p-5 rounded-lg border border-sky-200 shadow-sm mb-8">
+                <h3 class="text-lg font-bold text-sky-600 mb-3 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    口試題目參考 (請挑選題目進行 5-10 分鐘對話)
+                </h3>
+                <div class="grid grid-cols-1 gap-y-3 text-gray-700 text-sm pl-2">
+                    <p><strong class="text-sky-500">【人との関係】</strong> 1. 周りからどのような性格だと言われますか。どんな人といると落ち着きますか。<br>2. 自分に厳しいタイプですか、マイペースですか。人と接する時、気をつけていることは？</p>
+                    <p><strong class="text-sky-500">【旅行と交通】</strong> 3. 旅行で「せっかくだから挑戦してよかった！」と思う体験やエピソードを教えてください。<br>4. 旅行先で交通機関が動いていなかったり、予期せぬトラブルに巻き込まれた経験はありますか。</p>
+                    <p><strong class="text-sky-500">【健康】</strong> 5. 健康維持のために、普段の生活で実践している習慣や食事で気をつけていることは何ですか。<br>6. 友人から「体調がよくない」と相談されたら、具体的にどのようなアドバイスをしますか。</p>
+                    <p><strong class="text-sky-500">【自由時間と娯楽】</strong> 7. 最近楽しんだ映画やドラマで、リラックスできたもの、または絶対おすすめしたいものは？</p>
+                    <p><strong class="text-sky-500">【社会】</strong> 8. 最近気になった社会ニュースは何ですか。どのような点に注目したのか教えてください。</p>
+                    <p><strong class="text-sky-500">【買い物】</strong> 9. 買った後に「使いにくい」「思っていたのと違った」と気づいた失敗の経験があれば教えてください。</p>
+                    <p><strong class="text-sky-500">【言語と文化】</strong> 10. 外国人が驚くような、あなたの国の独特な文化や習慣は何ですか。具体例を挙げて紹介してください。</p>
+                </div>
+            </div>
+
+            <!-- 評分量表 N3-N2 -->
+            <div class="mb-12">
+                <div class="flex items-center mb-4">
+                    <h2 class="text-2xl font-bold text-gray-800 border-l-4 border-sky-500 pl-3">N3 升 N2 評分量表</h2>
+                    <span class="ml-4 text-sm text-gray-500 bg-white px-3 py-1 rounded-full shadow-sm">重點：敬語體系、抽象表達、意見論述、相槌(附和)</span>
+                </div>
+                <div class="overflow-x-auto shadow-sm border border-sky-100 sm:rounded-lg">
+                    <table class="w-full text-sm text-left text-gray-700 bg-white">
+                        <thead class="text-xs uppercase bg-sky-50">
+                            <tr>
+                                <th class="px-4 py-4 w-1/6">評估維度</th>
+                                <th class="px-4 py-4 w-1/5 border-l border-white bg-pass-50 text-pass-600">90-100分 (極佳)</th>
+                                <th class="px-4 py-4 w-1/5 border-l border-white bg-green-50 text-green-700">80-89分 (及格達標)</th>
+                                <th class="px-4 py-4 w-1/5 border-l border-white bg-amber-50 text-amber-700">70-79分 (未達標)</th>
+                                <th class="px-4 py-4 w-1/5 border-l border-white bg-fail-50 text-fail-600">40-69分 (需重修)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b hover:bg-gray-50">
+                                <th class="font-bold bg-sky-50/30 px-4 py-4">敬語與使役被動</th>
+                                <td class="px-4 py-3">尊敬/謙讓/丁寧語切換零失誤。能流暢使用使役被動態(～させられる)表達無奈等情緒。</td>
+                                <td class="px-4 py-3">
+                                    <div class="mb-1"><span class="font-bold text-green-600">85-89:</span> 敬語大致正確，偶有謙敬混淆。</div>
+                                    <div><span class="font-bold text-green-600">80-84:</span> 敬語會卡頓，但能自我察覺修正。</div>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="mb-1"><span class="font-bold text-amber-600">75-79:</span> 謙讓與尊敬語完全用反(嚴重失禮)。</div>
+                                    <div><span class="font-bold text-amber-600">70-74:</span> 避用敬語，僅用です/ます敷衍。</div>
+                                </td>
+                                <td class="px-4 py-3">完全不具備 N3 敬語知識，使役被動態變形完全失敗。</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <th class="font-bold bg-sky-50/30 px-4 py-4">意見論述與邏輯</th>
+                                <td class="px-4 py-3">能針對社會現象或抽象議題，使用「～に対して/～について」進行具邏輯的長篇論述。</td>
+                                <td class="px-4 py-3">
+                                    <div class="mb-1"><span class="font-bold text-green-600">85-89:</span> 能表達個人意見，理由算充分。</div>
+                                    <div><span class="font-bold text-green-600">80-84:</span> 意見偏向單純好壞，缺乏深度但流暢。</div>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="mb-1"><span class="font-bold text-amber-600">75-79:</span> 只能描述表面事實，無法延伸看法。</div>
+                                    <div><span class="font-bold text-amber-600">70-74:</span> 邏輯跳躍，前後矛盾，考官聽不懂。</div>
+                                </td>
+                                <td class="px-4 py-3">無法針對議題發言，或只能用「はい/いいえ」簡答，無論述能力。</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <th class="font-bold bg-sky-50/30 px-4 py-4">日式溝通技巧<br>(相槌/委婉語)</th>
+                                <td class="px-4 py-3">極度自然地使用「なるほど、確かに」等相槌。拒絕時會使用高段的委婉結尾(～ちょっと…)。</td>
+                                <td class="px-4 py-3">
+                                    <div class="mb-1"><span class="font-bold text-green-600">85-89:</span> 會適時給予反應，語氣不生硬。</div>
+                                    <div><span class="font-bold text-green-600">80-84:</span> 相槌較單一(只會說はい、そうですか)。</div>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="mb-1"><span class="font-bold text-amber-600">75-79:</span> 表達過於直接，像在質問考官。</div>
+                                    <div><span class="font-bold text-amber-600">70-74:</span> 考官說話時毫無反應，像在背書。</div>
+                                </td>
+                                <td class="px-4 py-3">態度生硬，用詞極度不禮貌或不分場合，缺乏日文語境意識。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-1">
+                    <h3 class="text-xl font-bold mb-4 text-gray-700 flex items-center"><svg class="w-5 h-5 mr-2 text-sky-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/></svg>考官評語庫</h3>
+                    <div class="bg-white p-5 rounded-lg border border-gray-200 shadow-sm space-y-4 text-sm">
+                        <div class="p-3 bg-green-50 border-l-4 border-green-500 rounded">
+                            <strong class="text-green-700 block mb-1">【85分以上】表現優異</strong>
+                            「敬語運用非常得體，且具備很好的論述能力。在對話中能自然使用『相槌』，日語語感極佳，完全具備挑戰 N2 的實力！」
+                        </div>
+                        <div class="p-3 bg-lime-50 border-l-4 border-lime-500 rounded">
+                            <strong class="text-lime-700 block mb-1">【80-84分】邊緣達標</strong>
+                            「順利過關！能清楚表達個人看法，但在『敬語』的使用上偶有出錯。N2 會有更多商業情境，這部分需多加留意。」
+                        </div>
+                        <div class="p-3 bg-amber-50 border-l-4 border-amber-500 rounded">
+                            <strong class="text-amber-700 block mb-1">【75-79分】詞彙/敬語失禮</strong>
+                            「口語流暢，但詞彙量停留在初級，無法用抽象單字精確表達感受。或在對話中敬語誤用導致失禮，需重新釐清後補考。」
+                        </div>
+                        <div class="p-3 bg-orange-50 border-l-4 border-orange-500 rounded">
+                            <strong class="text-orange-700 block mb-1">【70-74分】缺乏論述能力</strong>
+                            「被問到對某件事的『看法』時，只能回答表面事實或『好/不好』，無法使用 N3 句型延伸說明原因。表達停留在 N4 水平。」
+                        </div>
+                        <div class="p-3 bg-red-50 border-l-4 border-red-500 rounded">
+                            <strong class="text-red-700 block mb-1">【69分以下】理解與脫節</strong>
+                            「完全聽不懂 N3 級別的長句與抽象提問。對話缺乏互動（無相槌），建議先扎實複習 N3 後半段的聽力與長篇閱讀。」
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <h3 class="text-xl font-bold mb-4 text-gray-700 flex items-center"><svg class="w-5 h-5 mr-2 text-sky-500" fill="currentColor" viewBox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/></svg>實際題目分級案例 (9種層次)</h3>
+                    <div class="space-y-3 max-h-[600px] overflow-y-auto pr-2 pb-4">
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-green-500">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-green-700">🟢 優秀1：邏輯與語感極佳 (Q8 社会ニュース)</span>
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-bold">98 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">針對【社会ニュース】，能用「少子化についてですが、私は～だと思います」漂亮破題，邏輯清晰，且在考官回應時會自然接上「なるほど」等相槌。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-lime-500">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-lime-700">🟢 優秀2：敘事清晰型 (Q4 トラブル)</span>
+                                <span class="bg-lime-100 text-lime-800 text-xs px-2 py-1 rounded-full font-bold">87 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">針對【予期せぬトラブル】，能清楚描述電車停駛的前因後果。雖然在較難的使役被動態稍微卡頓，但不影響語意完整性與聽者的理解。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-amber-400">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-amber-600">🟡 待加強1：敬語語體錯誤 (Q6 アドバイス)</span>
+                                <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full font-bold">78 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">針對【友人へのアドバイス】，竟然對朋友使用了過度生硬的敬語「病院に行かれたほうがいいですよ」，語體場合錯誤，日文的人際距離感失準。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-orange-400">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-orange-600">🟠 待加強2：假面 N3 詞彙匱乏 (Q7 おすすめ)</span>
+                                <span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full font-bold">75 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">針對【おすすめの映画】，詞彙停留在N5。只會說「とても面白いです」「いいです」，缺乏 N3 應有的抽象描述能力（如：魅力的、考えさせられる）。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-orange-500">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-orange-600">🟠 待加強3：無法延伸論述 (Q2 マイペース)</span>
+                                <span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full font-bold">73 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">問及【マイペースなタイプですか】，只簡答「はい、マイペースです。」，考官刻意等待他繼續說明理由，學生卻完全沒有延伸論述能力，場面直接乾掉。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-red-400">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-red-600">🔴 待加強4：白目機器人 (Q1 性格)</span>
+                                <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full font-bold">67 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">在探討【性格】的對話中，當考官分享看法或給予回應時，學生毫無「相槌」（不會說そうですね、ええ），像機器人般死盯著考官，單向輸出。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-red-500">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-red-700">🔴 待加強5：使役被動卡死 (Q9 失敗の経験)</span>
+                                <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full font-bold">62 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">針對【失敗の経験】，想表達「被店員推銷所以買了」，但使役被動（買わされた）完全卡死講不出來，支吾了半天最後用「私が買いました」草草結束。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-rose-600">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-rose-700">🔴 待加強6：文化敬語顛倒 (Q10 独特な文化)</span>
+                                <span class="bg-rose-100 text-rose-800 text-xs px-2 py-1 rounded-full font-bold">55 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">針對【外国人が驚く文化】，把「（外國人）來台灣」講成了極度失禮的謙讓語「台湾に<b>参ります</b>」。尊敬與謙讓完全顛倒，溝通維度嚴重扣分。</p>
+                        </div>
+                        <div class="case-card bg-white p-4 rounded-lg shadow-sm border border-l-4 border-rose-800">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-rose-900">⚫ 待加強7：完全越級打怪</span>
+                                <span class="bg-rose-200 text-rose-900 text-xs px-2 py-1 rounded-full font-bold">40 分</span>
+                            </div>
+                            <p class="text-sm text-gray-600">面對任何 N3 等級的長篇抽象提問，完全無法理解題意（鴨子聽雷）。只能抓取一兩個聽懂的單字，給出無關緊要、答非所問的簡答。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        function switchTab(tabId) {
+            // Hide all contents
+            document.querySelectorAll('.tab-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Reset all buttons
+            document.querySelectorAll('.tab-btn').forEach(el => {
+                el.classList.remove('border-sakura-500', 'text-sakura-600', 'border-lilac-500', 'text-lilac-600', 'border-sky-500', 'text-sky-600', 'font-bold');
+                el.classList.add('border-transparent', 'text-gray-500', 'font-medium');
+            });
+
+            // Show selected content
+            document.getElementById(tabId).classList.add('active');
+            
+            // Highlight selected button
+            const activeBtn = document.getElementById('tab-' + tabId);
+            activeBtn.classList.remove('border-transparent', 'text-gray-500', 'font-medium');
+            activeBtn.classList.add('font-bold');
+            
+            if(tabId === 'n5-n4') {
+                activeBtn.classList.add('border-sakura-500', 'text-sakura-600');
+            } else if (tabId === 'n4-n3') {
+                activeBtn.classList.add('border-lilac-500', 'text-lilac-600');
+            } else if (tabId === 'n3-n2') {
+                activeBtn.classList.add('border-sky-500', 'text-sky-600');
+            }
+        }
+    </script>
+</body>
+</html>
